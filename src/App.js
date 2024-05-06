@@ -41,8 +41,7 @@ function App() {
         .then(data => {
           const newUsers = data.results.map(user => ({
             name: `${user.name.first} ${user.name.last}`,
-            email: user.email,
-            image: `https://robohash.org/${user.name.first.toLowerCase()}.png?set=set1&size=150x150`
+            email: user.email
           }));
           setUsers(prevUsers => [...prevUsers, ...newUsers]);
         })
@@ -94,7 +93,7 @@ function App() {
             key={index}
             name={user.name}
             email={user.email}
-            image={user.image}
+
           />
         ))}
        

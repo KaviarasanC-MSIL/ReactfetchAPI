@@ -1,5 +1,7 @@
-.app {
+body {
   background: linear-gradient(to right, #e84393, #4929da);
+}
+.app {
   padding: 20px;
 }
 .container {
